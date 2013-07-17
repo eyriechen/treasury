@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Balance Sheet</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.form.js"></script>
+        <script type="text/javascript" src="js/sheet.js"></script>
+    </head>
+    <body>
+        <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td>总计</td><td></td><td></td><td></td><td>{{totalBalance}}</td>
+        </tr>
+        {% for card in cards %}
+            <tr key="{{card.key()}}">
+                <td class="icons"><img src="{{card.icon}}" height="56"/></td>
+                <td>{{card.issuer}}</td>
+                <td>{{card.card_type}}</td>
+                <td>{{card.card_number}}</td>
+                <td class="balance_value">{{card.balance}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        <div id="overlay" style="display: none; ">
+			<div id="card_detail">
+				<div class="close-button"></div>
+                <div id="card_content"><div>
+			</div>
+		</div>
+
+    </body>
+</html>

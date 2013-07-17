@@ -1,0 +1,21 @@
+<div>
+    <p>添加记录</p>
+    <form action="/add_record" method="post">
+        <input type="text" name="date"/> 
+        <input type="text" name="usage"/> 
+        <input type="text" name="place"/> 
+        <input type="text" name="amount"/> 
+        <input type="text" name="parent" value="{{card.key()}}" style="display:none;"/> 
+        <input type="submit" /> 
+    </form>
+    <table>
+        {% for record in records %}
+            <tr> 
+                <td>{{record.date}}</td>
+                <td>{{record.usage}}</td>
+                <td>{{record.amount}}</td>
+                <td>{{record.place}}</td>
+            </tr> 
+        {% endfor %}
+    </table>
+</div>

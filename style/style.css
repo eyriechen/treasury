@@ -1,0 +1,48 @@
+
+#overlay{
+	position: fixed;
+	-webkit-box-align: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-transition: 200ms opacity;
+	background-color: rgba(255, 255, 255, 0.75);
+	bottom: 0;
+	display: -webkit-box;
+	left: 0;
+	overflow: auto;
+	padding: 20px;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+#card_detail{
+	position: relative;
+	width: 800px;
+	height: 600px;
+	box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+    background:white;
+}
+
+.close-button {
+	background-image: url('../images/x.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 24px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 24px;
+}
+
+.close-button:hover {
+	background-image: url('../images/x-hover.png');
+}
+
+tr:hover { background: #FCF; }
+
+.icons {text-align:center}
+
+td{padding:4px;}
+
+.balance_value{text-align:center}
